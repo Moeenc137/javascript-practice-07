@@ -7,3 +7,21 @@ function sum(a, b, c) {
 }
 
 sum("com", "in", "asas");
+
+//return function:
+
+function add(a, b, c, d) {
+  x = a + b + c / d;
+  return x;
+}
+
+let alg = add(20, 8, 9, 45);
+console.log(alg);
+
+function add2(a, b, c, d) {
+  console.log("sum of add2", a / b - c + d);
+}
+
+add2(2, 3, 4, 2);
+
+add2(12, 332, 432, 221);
