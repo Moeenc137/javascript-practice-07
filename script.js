@@ -25,3 +25,19 @@ function add2(a, b, c, d) {
 add2(2, 3, 4, 2);
 
 add2(12, 332, 432, 221);
+
+function add3(a, b, c, d) {
+  return a + b + c / d;
+}
+
+let ad = add3;
+
+console.log(ad);
+
+//arrow function:
+
+let arrowsum = (a, b) => {
+  console.log("value of arrowsum : ", b + a);
+};
+
+arrowsum(2, 2);
