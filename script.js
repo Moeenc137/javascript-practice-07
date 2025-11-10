@@ -41,3 +41,16 @@ let arrowsum = (a, b) => {
 };
 
 arrowsum(2, 2);
+
+let arrowsum2 = (v, b) => console.log("arrowsum2:", v / b);
+
+arrowsum2(45, 78);
+
+//practice(fnctions): extract all the vovals from the prompt:
+
+let input = prompt();
+
+if ((input = "a,e,i,o,u")) {
+  console.log();
+} else {
+}
