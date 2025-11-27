@@ -122,6 +122,26 @@ let Pfiltrnum = filtrnum.filter((val) => {
 });
 console.log(Pfiltrnum);
 
-//reduce  method
+//reduce  method (used to give one value answer from array e.g: sum,avg,less then,greater then)
 let arrrd = [2, 4, 5, 87, 99];
-arrrd.reduce((prev, crr) => {});
+let parrrd = arrrd.reduce((prev, curr) => {
+  return prev > curr ? prev : curr;
+});
+console.log(parrrd);
+
+let arrrd2 = [3, 45, 53, 32];
+let parrrd2 = arrrd2.reduce((prev, curr) => {
+  return prev / curr;
+});
+console.log(parrrd2);
+
+// //practice (filter out marks exceding 90)
+// marks = [78,32,49,99,95,97,12]
+// let pmarks = marks.map((num) =>{
+
+// })
+let marks = [21, 32, 4, 5, 53, 99, 95, 92, 90];
+let pmarks = marks.filter((val) => {
+  return val > 90;
+});
+console.log(pmarks);
