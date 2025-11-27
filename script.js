@@ -48,9 +48,25 @@ arrowsum2(45, 78);
 
 //practice(fnctions): extract all the vovals from the prompt:
 
-let input = prompt();
+// let input = prompt();
 
-if ((input = "a,e,i,o,u")) {
-  console.log();
-} else {
+// if ((input = "a,e,i,o,u")) {
+//   console.log();
+// } else {
+// }
+
+function countvowels(str) {
+  let = count = 0;
+  for (let char of str) {
+    if (
+      char === "a" ||
+      char === "e" ||
+      char === "i" ||
+      char === "o" ||
+      char === "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
 }
