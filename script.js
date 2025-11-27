@@ -145,3 +145,21 @@ let pmarks = marks.filter((val) => {
   return val > 90;
 });
 console.log(pmarks);
+
+//practice (return array of numbers according to user input)
+input = prompt();
+let iarr = [];
+for (let i = 1; i <= input; i++) {
+  iarr[i - 1] = i;
+}
+
+let piarr = iarr.reduce((prev, curr) => {
+  return prev + curr;
+});
+let ppiarr = iarr.reduce((prev, curr) => {
+  return prev * curr;
+});
+
+console.log("array:", iarr);
+console.log("sum of array:", piarr);
+console.log("product of array:", ppiarr);
