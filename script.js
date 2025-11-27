@@ -26,18 +26,15 @@ function add3(a, b, c, d) {
   return a + b + c / d;
 }
 let ad = add3;
-
 console.log(ad);
 
 //arrow function:
 let arrowsum = (a, b) => {
   console.log("value of arrowsum : ", b + a);
 };
-
 arrowsum(2, 2);
 
 let arrowsum2 = (v, b) => console.log("arrowsum2:", v + b);
-
 arrowsum2("ijkl", "mnop");
 
 //practice(fnctions): extract all the vovals from the prompt:
@@ -83,7 +80,6 @@ let countvow = (str) => {
 
 //foreach(loop) function only can used in arrays
 //callback:
-
 let arrowsum3 = (v, b) => console.log("arrowsum3:", v + b);
 arrowsum3("efgh", "abcd");
 
@@ -108,3 +104,24 @@ let number = [2, 3, 7, 8, 9];
 number.forEach((val) => {
   console.log(val * val);
 });
+// let number3 = [2, 3, 7, 8, 9];
+// let pnum3 = number3.forEach((val) => {});
+
+//map method (lets you return a function)
+let calsquare = [12, 14, 89, 87];
+let pcalsquare = calsquare.map((num) => {
+  return num * num;
+});
+
+console.log(pcalsquare);
+
+//filter method
+let filtrnum = [21, 32, 4, 5, 53];
+let Pfiltrnum = filtrnum.filter((val) => {
+  return val % 2 === 0;
+});
+console.log(Pfiltrnum);
+
+//reduce  method
+let arrrd = [2, 4, 5, 87, 99];
+arrrd.reduce((prev, crr) => {});
