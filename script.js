@@ -1,15 +1,12 @@
 //functions
 
 //how to make our own function:
-
 function sum(a, b, c) {
   console.log(b, c, a);
 }
-
 sum("com", "in", "asas");
 
 //return function:
-
 function add(a, b, c, d) {
   x = a + b + c / d;
   return x;
@@ -23,28 +20,25 @@ function add2(a, b, c, d) {
 }
 
 add2(2, 3, 4, 2);
-
 add2(12, 332, 432, 221);
 
 function add3(a, b, c, d) {
   return a + b + c / d;
 }
-
 let ad = add3;
 
 console.log(ad);
 
 //arrow function:
-
 let arrowsum = (a, b) => {
   console.log("value of arrowsum : ", b + a);
 };
 
 arrowsum(2, 2);
 
-let arrowsum2 = (v, b) => console.log("arrowsum2:", v / b);
+let arrowsum2 = (v, b) => console.log("arrowsum2:", v + b);
 
-arrowsum2(45, 78);
+arrowsum2("ijkl", "mnop");
 
 //practice(fnctions): extract all the vovals from the prompt:
 
@@ -70,3 +64,47 @@ function countvowels(str) {
   }
   return count;
 }
+
+let countvow = (str) => {
+  let = count = 0;
+  for (let char of str) {
+    if (
+      char === "a" ||
+      char === "e" ||
+      char === "i" ||
+      char === "o" ||
+      char === "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
+};
+
+//foreach(loop) function only can used in arrays
+//callback:
+
+let arrowsum3 = (v, b) => console.log("arrowsum3:", v + b);
+arrowsum3("efgh", "abcd");
+
+function callarrow(arrowsum3) {
+  console.log(arrowsum3);
+}
+
+callarrow("callarrow :", arrowsum3);
+
+let arr = [1, 2, 3, 4, 5];
+arr.forEach(function (val) {
+  console.log(val);
+});
+
+let alf = ["and", "or", "not"];
+alf.forEach((val, idx, arr) => {
+  console.log(val.toUpperCase(), idx, arr);
+});
+
+// practice to return square of every number in an array using foreach loop.
+let number = [2, 3, 7, 8, 9];
+number.forEach((val) => {
+  console.log(val * val);
+});
